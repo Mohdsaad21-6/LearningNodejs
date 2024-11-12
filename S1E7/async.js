@@ -1,6 +1,4 @@
-// const { log } = require("async");
 
-const { log } = require("console");
 const fs =require("fs");
 const https =require("https");
 
@@ -9,6 +7,12 @@ console.log("Hello World");
 var a=2000;
 var b=2345;
 
+
+
+fs.readFileSync("./file.txt","utf8",(err,data)=>{
+    console.log("saad");
+    
+})
 
 https.get('https://dummyjson.com/products/1',(res)=>{
     console.log("Fetched Data was Sucessfully");
